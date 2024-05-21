@@ -179,7 +179,8 @@ h3,h2{
     border-radius: 20px;
     position: absolute;
     right: 5px;
-    top: 25px;
+    top: 50%;
+    transform: translate(-5px, -50%);
 }
 
 /* Main Section */
@@ -231,8 +232,22 @@ h3,h2{
     line-height: 1.5;
 }
 
-.card > img{
+.card img{
     max-width: 100%;
+}
+
+.album {
+    position: relative;
+}
+
+.card-play{
+    display: none;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #popular-artist img{
@@ -302,7 +317,7 @@ Player
 }
 
 .timeline-bar{
-    min-width: 450px;
+    width: 450px;
     height: 4px;
     background-color: #8B8B8B;
     display: inline;
@@ -368,7 +383,7 @@ Player
     }
 
     .timeline-bar{
-        min-width: 300px;
+        width: 300px;
     }
  }
 
@@ -394,11 +409,11 @@ Player
     }
     
     .timeline-bar{
-        min-width: 200px;
+        width: 200px;
     }
 
     .volume-control{
-        min-width: 30px;
+        width: 50px;
     }
 
     .current-song img{
@@ -511,7 +526,7 @@ Player
     }
 
     .timeline-bar{
-        min-width: 70px;
+        width: 70px;
     }
 
     .start-time, .end-time{
@@ -519,6 +534,6 @@ Player
     }
 
     .volume-control{
-        min-width: 20px;
+        width: 20px;
     }
 }

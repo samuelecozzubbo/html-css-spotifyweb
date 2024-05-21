@@ -1,0 +1,18 @@
+.album:hover{
+    transition: all;
+    opacity: 0.5;
+}
+
+.album:hover .card-play{
+    display: inline-block;
+}
+
+.button:hover{
+    transition: all 0.2;
+    font-size: larger;
+}
+
+#main-nav-bar a:hover{
+    transition: all 0.2s ease-out;
+    color: white;
+}
