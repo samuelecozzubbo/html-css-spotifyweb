@@ -16,64 +16,80 @@
     <div id="wrapper">
         <!-- Left menu -->
         <div id="nav-left">
-            <section id="nav-bar">
-                <img id="big-logo" src="img/logo.svg" alt="big-logo">
-                <!-- Home -->
-                <div class="icon-text" id="selected">
-                    <img class="icons" src="img/home.svg" alt="home-logo">
-                    <span>Home</span>
-                </div>
+            <div id="nav-left-wrapper-up">
+                <section id="nav-bar">
+                    <img id="big-logo" src="img/logo.svg" alt="big-logo">
+                    <!-- Home -->
+                    <div class="icon-text" id="selected">
+                        <img class="icons" src="img/home.svg" alt="home-logo">
+                        <span>Home</span>
+                    </div>
+    
+                    <!-- search -->
+                    <div class="icon-text">
+                        <img class="icons" src="img/search.svg" alt="search-logo">
+                        <span>Cerca</span>
+                    </div>
+    
+                    <!-- Library -->
+                    <div class="icon-text">
+                        <img class="icons" src="img/libreria.svg" alt="library-logo">
+                        <span>La tua libreria</span>
+                    </div>
+                    
+                </section>
+    
+                <section id="playlist">
+                    <div id="new-playlist">
+                        <h3>PLAYLIST</h3>
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Crea Playlist</span>
+                    </div>
+                    <div id="playlist-list">
+                        <ul>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </section>
+            </div>
 
-                <!-- search -->
-                <div class="icon-text">
-                    <img class="icons" src="img/search.svg" alt="search-logo">
-                    <span>Cerca</span>
+            <div id="nav-left-wrapper-down">
+                <div id="install-bar">
+                    <img class="download-logo" src="img/download.svg" alt="logo-download">
+                    <a href="#">Installa app</a>
                 </div>
-
-                <!-- Library -->
-                <div class="icon-text">
-                    <img class="icons" src="img/libreria.svg" alt="library-logo">
-                    <span>La tua libreria</span>
-                </div>
+                <hr class="interline">
+                <div class="profile-information">
+                    <img class="profile-img" src="img/profile.svg" alt="profile-img">
+                    <h3 class="profile-name">Samuele Cz</h3>
+                </div>   
                 
-            </section>
-
-            <section id="playlist">
-                <div id="new-playlist">
-                    <h3>PLAYLIST</h3>
-                    <i class="fa-solid fa-plus"></i>
-                    <span>Crea Playlist</span>
-                </div>
-                <div id="playlist-list">
-                    <ul>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </section>
+            </div>
+            
         </div>
 
         <!-- Upper menu -->
@@ -108,6 +124,23 @@
             <!-- Recently played section -->
             <section id="recently-played">
                 <h2 class="card-container">Recently played</h2>
+                <div class="card-container">
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="img/metal_lifting.jpg" alt="metal">
+                        <div class="song-information">
+                            <span class="song-artist">Heavy Metal</span><br>
+                            <span class="song-name" style="font-size: 0.8em;">Subtitle</span>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+            <!-- Suggestions section -->
+            <section id="suggestions">
+                <div class="card-container">
+                    <h2>Recently played</h2>
+                    <h6 class="under-title">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</h6>
+                </div>
                 <div class="card-container">
                     <!-- Card -->
                     <div class="card">
