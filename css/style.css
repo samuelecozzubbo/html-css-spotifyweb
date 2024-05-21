@@ -178,14 +178,17 @@ h3,h2{
 
 /* Main Section */
 #main-nav-bar{
-    max-width: 50%;
+    min-width: 50%;
     margin: 15px auto 0;
+    gap: 10px;
 }
 
 #main-nav-bar ul{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.8em;
 }
 
 #main-nav-bar a{
@@ -201,11 +204,15 @@ h3,h2{
     margin: 30px auto 0;
     display: flex;
     flex-wrap: nowrap;
-    gap: 40px;
+    justify-content: space-between;
+}
+
+.card-container.no-space{
+    justify-content: flex-start;
 }
 
 .card{
-    max-width: 14%;
+    max-width: calc(100% / 6 -10px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,7 +225,7 @@ h3,h2{
 }
 
 .card > img{
-    width: 100%;
+    max-width: 100%;
 }
 
 #popular-artist img{
@@ -331,10 +338,43 @@ Player
     left: 0;
 }
 
+/*********************************
+ VERSIONE MD
+ **********************************/
+ @media  screen and (max-width: 1024px) {
+    .button{
+        display: none;
+    }
 
-/* VERSIONE CELLULARE */
+    .card-container{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .card{
+        width: calc(100% / 4 - 10px);
+    }
+
+    #main-nav-bar ul{
+        flex-wrap: wrap;
+    }
+ }
+
+ /*********************************
+ VERSIONE S 
+ **********************************/
+ @media  screen and (max-width: 768px) {
+    .card{
+        width: calc(100% / 2 - 10px);
+    }
+ }
+
+/*********************************
+ VERSIONE XS 
+ **********************************/
 @media screen and (max-width:480px){
-    #playlist{
+    #playlist,#big-logo,.icon-text > span{
         display: none;
     }
 }
