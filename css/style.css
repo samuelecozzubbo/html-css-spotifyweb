@@ -84,6 +84,12 @@ h3,h2{
     text-align: left;
 }
 
+#small-logo{
+    max-width: 100%;
+    margin: 15px 0 15px 15px;
+    display: none;
+}
+
 .icons{
     max-width: 15%;
 }
@@ -212,7 +218,7 @@ h3,h2{
 }
 
 .card{
-    max-width: calc(100% / 6 -10px);
+    max-width: calc(100% / 6 - 20px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -353,7 +359,7 @@ Player
     }
 
     .card{
-        width: calc(100% / 4 - 10px);
+        max-width: calc(100% / 4 - 20px);
     }
 
     #main-nav-bar ul{
@@ -366,7 +372,7 @@ Player
  **********************************/
  @media  screen and (max-width: 768px) {
     .card{
-        width: calc(100% / 2 - 10px);
+        max-width: calc(100% / 2 - 20px);
     }
  }
 
@@ -376,5 +382,21 @@ Player
 @media screen and (max-width:480px){
     #playlist,#big-logo,.icon-text > span{
         display: none;
+    }
+
+    #small-logo{
+        display: inline-block;
+    }
+
+    #nav-left{
+        width: 50px;
+    }
+
+    .icons{
+        max-width: 100%;
+    }
+
+    #main-section{
+        width: calc(100% - 50px);
     }
 }
