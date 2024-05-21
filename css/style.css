@@ -69,8 +69,8 @@ h3,h2{
 #player{
     z-index: 300;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 0 15px;
     background-color: rgb(30, 30, 99);
     width: 100%;
@@ -86,7 +86,7 @@ h3,h2{
 
 #small-logo{
     max-width: 100%;
-    margin: 15px 0 15px 15px;
+    padding: 7px;
     display: none;
 }
 
@@ -211,6 +211,7 @@ h3,h2{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .card-container.no-space{
@@ -253,7 +254,6 @@ Player
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
 }
 
@@ -288,9 +288,10 @@ Player
 /* playback-controls section */
 .control-buttons{
     font-size: 1.5em;
-    max-width: 50%;
+    max-width: 100%;
     display: flex;
     gap: 30px;
+    margin: 0 auto;
 }
 
 .timeline{
@@ -301,7 +302,7 @@ Player
 }
 
 .timeline-bar{
-    min-width: 500px;
+    min-width: 450px;
     height: 4px;
     background-color: #8B8B8B;
     display: inline;
@@ -348,14 +349,10 @@ Player
  VERSIONE MD
  **********************************/
  @media  screen and (max-width: 1024px) {
-    .button{
-        display: none;
-    }
 
     .card-container{
         flex-wrap: wrap;
         justify-content: flex-start;
-        gap: 10px;
     }
 
     .card{
@@ -365,6 +362,14 @@ Player
     #main-nav-bar ul{
         flex-wrap: wrap;
     }
+
+    .timeline{
+        gap: 10px;
+    }
+
+    .timeline-bar{
+        min-width: 300px;
+    }
  }
 
  /*********************************
@@ -373,6 +378,35 @@ Player
  @media  screen and (max-width: 768px) {
     .card{
         max-width: calc(100% / 2 - 20px);
+    }
+
+    #now-playing,#volume-share-controls{
+        gap: 10px;
+    }
+
+    .song-information{
+        font-size: 0.9em;
+    }
+
+    .control-buttons{
+        gap: 25px;
+        font-size: 1.2em;
+    }
+    
+    .timeline-bar{
+        min-width: 200px;
+    }
+
+    .volume-control{
+        min-width: 30px;
+    }
+
+    .current-song img{
+        max-width: 30px;
+    }
+
+    #player a{
+        font-size: 0.9em;
     }
  }
 
@@ -396,7 +430,95 @@ Player
         max-width: 100%;
     }
 
+    .icon-text{
+        padding: 7px;
+        margin: 0 auto;
+    }
+
+    #nav-left-wrapper-down{
+        padding: 7px;
+    }
+
+    .profile-name,#install-bar > a,.interline{
+        display: none;
+    }
+
+    .profile-img, .download-logo{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .download-logo{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .button{
+        font-size: 0.8em;
+    }
+
     #main-section{
         width: calc(100% - 50px);
+    }
+
+    #player{
+        padding: 5px;
+    }
+
+    #player a{
+        font-size: 0.8em;
+    }
+
+    #now-playing,#volume-share-controls{
+        max-width: 25%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #8B8B8B;
+    }
+    
+    #playback-controls{
+        max-width: 50%;
+    }
+    
+    /*now-playing section */
+    .song-information{
+        font-size: 0.8em;
+    }
+
+    .current-song{
+        gap: 5px;
+    }
+    
+    .current-song img{
+        max-width: 30px;
+    }
+    
+    .fa-heart{
+        margin-right: 0;
+    }
+
+    /* playback-controls section */
+    .control-buttons{
+        font-size: 1em;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .timeline{
+        gap: 10px;
+    }
+
+    .timeline-bar{
+        min-width: 70px;
+    }
+
+    .start-time, .end-time{
+        font-size: 0.6em;
+    }
+
+    .volume-control{
+        min-width: 20px;
     }
 }
