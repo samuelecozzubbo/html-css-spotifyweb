@@ -10,6 +10,9 @@
 
 #selected{
     color: white;
+    border-left: 4px solid lime;
+    padding: 0 0 0 11px;
+    margin-left: 0;
 }
 
 h3,h2{
@@ -18,6 +21,7 @@ h3,h2{
 
 .button{
     color: white;
+    font-size: 15px;
 }
 
 .under-title{
@@ -37,7 +41,7 @@ h3,h2{
 
 #nav-left{
     width: 250px;
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     z-index: 200;
     display: flex;
     flex-direction: column;
@@ -101,6 +105,9 @@ h3,h2{
     gap: 10px;
     margin: 0 0 15px 15px;
     font-weight: bolder;
+}
+
+.icon-text > a{
     color: #717171;
 }
 
@@ -122,12 +129,12 @@ h3,h2{
     margin-bottom: 10px;
 }
 
-#playlist li,#playlist li a{
+#playlist li,#playlist a{
     margin-top: 15px;
     color: #717171;
 }
 
-#nav-left-wrapper-up{
+#playlist-list{
     overflow-y: auto;
 }
 
@@ -448,6 +455,11 @@ Player
     .icon-text{
         padding: 7px;
         margin: 0 auto;
+    }
+
+    #selected{
+        padding: 0 0 0 3px;
+        margin-left: 0;
     }
 
     #nav-left-wrapper-down{

@@ -12,7 +12,37 @@
     font-size: larger;
 }
 
-#main-nav-bar a:hover{
+#main-nav-bar a:hover,.icon-text > a:hover, #playlist a:hover, #install-bar a:hover,.fa-heart:hover,.fa-folder:hover{
     transition: all 0.2s ease-out;
     color: white;
+    cursor: pointer;
+}
+
+.profile-img:hover{
+    transition: all;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.song-artist:hover,.song-name:hover{
+    transition: all;
+    text-decoration: underline;
+    color: white;
+}
+
+.timeline:hover .fa-circle{
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.fa-circle{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    color: lime;
+    border: solid 5px white;
+    border-radius: 50%;
+    font-size: 0.5em;
+    display: none;
 }
