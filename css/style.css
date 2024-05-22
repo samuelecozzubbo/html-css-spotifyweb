@@ -134,10 +134,6 @@ h3,h2{
     color: #717171;
 }
 
-#playlist-list{
-    overflow-y: auto;
-}
-
 /* nav-left-wrapper */
 #nav-left-wrapper-down{
     display: flex;
@@ -205,9 +201,23 @@ h3,h2{
     font-size: 0.8em;
 }
 
+#main-nav-bar li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
 #main-nav-bar a{
     color: #717171;
 }
+
+.short-border{
+    width: 30px;
+    height: 2px;
+    background-color: lime;
+}
+
 /* Card section */
 .main-section-title{
     width: 96%;

@@ -1,6 +1,7 @@
 .album:hover{
     transition: all;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .album:hover .card-play{
@@ -30,7 +31,17 @@
     color: white;
 }
 
+.fa-backward-step:hover,.fa-circle-play:hover,.fa-forward-step:hover,.fa-rotate-right:hover,.fa-shuffle:hover{
+    transition: all;
+    font-size: 1.1em;
+}
+
 .timeline:hover .fa-circle{
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.volume-control-active:hover .fa-circle{
     transition: all 0.2s;
     display: inline-block;
 }
@@ -45,4 +56,16 @@
     border-radius: 50%;
     font-size: 0.5em;
     display: none;
+}
+
+#nav-left{
+    overflow-y: hidden;
+}
+
+#playlist{
+    overflow-y: auto;
+}
+
+#playlist-list{
+    overflow-y: auto;
 }
