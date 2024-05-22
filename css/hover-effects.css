@@ -59,13 +59,15 @@
 }
 
 #nav-left{
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
-#playlist{
-    overflow-y: auto;
+#nav-left-wrapper-up{
+    display: flex;
+    flex-direction: column;
 }
 
 #playlist-list{
     overflow-y: auto;
+    max-height: 100%;
 }
