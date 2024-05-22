@@ -182,18 +182,18 @@ h3,h2{
 }
 
 #nav-left-wrapper-up{
-    overflow: hidden;
+    overflow-y: hidden;
     max-height: 90%;
 }
 
 #playlist{
-    overflow: hidden;
+    overflow-y: hidden;
     height: 100%;
 }
 
 #playlist-list{
     max-height: 50%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 /* Upper menu */
