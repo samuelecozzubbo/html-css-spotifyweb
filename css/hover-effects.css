@@ -59,22 +59,3 @@
 }
 
 
-#nav-left{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-#nav-left-wrapper-up{
-    overflow: hidden;
-    height: 100%;
-}
-
-#playlist{
-    overflow: hidden;
-}
-
-#playlist-list{
-    height: 80%;
-    overflow: scroll;
-}

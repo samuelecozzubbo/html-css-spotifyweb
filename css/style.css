@@ -174,7 +174,27 @@ h3,h2{
     border-radius: 50%;
 }
 
+/* Nav left overflow */
+#nav-left{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 
+#nav-left-wrapper-up{
+    overflow: hidden;
+    max-height: 90%;
+}
+
+#playlist{
+    overflow: hidden;
+    height: 100%;
+}
+
+#playlist-list{
+    max-height: 50%;
+    overflow: scroll;
+}
 
 /* Upper menu */
 #upper-menu > .button{
